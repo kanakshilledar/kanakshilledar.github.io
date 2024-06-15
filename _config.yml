@@ -24,8 +24,8 @@ description: >- # this means to ignore newlines until "baseurl:"
   Join my journey in learning about RISCV and Embedded Linux
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://kanakshilledar.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+twitter_username: kanak_shilledar
+github_username:  kanakshilledar
 
 # Build settings
 remote_theme: chesterhow/tale
