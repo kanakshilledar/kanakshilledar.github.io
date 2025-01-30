@@ -3,6 +3,7 @@ layout: post
 title:  "Contributing to the Linux Kernel"
 date:   2024-08-21 15:03:43 +0530
 categories: linux kernel opensource
+author: Kanak Shilledar
 ---
 
 If you’ve ever wanted to dip your toes into open source but

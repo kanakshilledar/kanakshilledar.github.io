@@ -3,6 +3,7 @@ layout: post
 title:  "Let's Write a Patch"
 date:   2024-08-31 10:03:43 +0530
 categories: linux kernel opensource
+author: Kanak Shilledar
 ---
 
 You’ve done the research, you’ve learned the basics, and now it’s time to roll up

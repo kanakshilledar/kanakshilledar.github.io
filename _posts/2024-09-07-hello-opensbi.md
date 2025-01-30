@@ -3,6 +3,7 @@ layout: post
 title:  "Hello OpenSBI"
 date:   2024-09-08 10:03:43 +0530
 categories: riscv kernel opensource opensbi
+author: Kanak Shilledar
 ---
 
 In this post we will discuss on how we can get a `Hello World!` printed on the 
