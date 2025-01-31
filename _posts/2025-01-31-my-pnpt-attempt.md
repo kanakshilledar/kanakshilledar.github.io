@@ -113,4 +113,12 @@ Alright for the impatient ones out there! Here's the whole thing summarized:
 * [SecLists](https://github.com/danielmiessler/SecLists)
 * [PEH Notes](https://blog.syselement.com/tcm/courses/peh)
 
-These are a few resources
+# Conclusion
+
+I feel that PNPT is absolutely worth it and if you are a beginner PNPT is a great starting point in your cybersecurity
+journey. I learnt a lot about hacking, approaching things with the real world perspective.
+Thanks for reading!
+
+All the best for your PNPT attempt :)
+
+Happy Hacking
