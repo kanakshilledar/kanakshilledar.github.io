@@ -19,7 +19,8 @@ list. This post may not be as heavily documented and indepth as compared to the
 [official documentation](https://kernelnewbies.org/FirstKernelPatch), which should always be preferred.
 Let's Get Started!
 
-# Setting Up the email client
+## Setting Up the email client
+
 I use the `git send-email` to send the patches. As discussed in the previous blog post,
 we need to send the patches via email to the mailing lists. I have created a separate
 GMail account to handle the mailing lists tasks, but it's totally your preference.
@@ -39,23 +40,28 @@ To use GMail add the following in your **~/.gitconfig**
 > You will need to generate a passkey for your gmail account from your google
 > account security page. Your standard GMail account password won't work.
 
-# Make some changes
+## Make some changes
+
 Now that we have our email client ready we will make some changes to the source code.
 
 Clone the kernel source using
+
 ```Shell
-$ git clone  https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git
+git clone  https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git
 ```
+
 You can find some bugs to fix in their [bugzilla](https://bugzilla.kernel.org/),
 or fix some documentation, or add some features, etc. Just remember that everytime
 you start working or before sending the patch try to rebase your commits by pulling
 first. (pull early and pull often)
 
-# Writing Good Commit Messages
+## Writing Good Commit Messages
+
 In the Linux kernel world, commit messages are super important. They need to be
 clear, concise, and follow a specific format.
 
 ## The Structure of a Good Commit Message
+
 * Subject Line: This should be short (50 characters or less) and describe what the
   patch does.
 * Commit Body: Here, you explain why you’re making this change. Include any relevant
@@ -66,6 +72,7 @@ clear, concise, and follow a specific format.
 
 > **TIP:**
 > You can find good commit messages just by looking at the previous commits :)
+>
 > ```Shell
 > $ git log
 > Author: Kanak Shilledar <kanakshilledar@gmail.com>
@@ -82,33 +89,41 @@ clear, concise, and follow a specific format.
 >   Signed-off-by: Kanak Shilledar <kanakshilledar@gmail.com>
 > ```
 
-# Generating a Patch
+## Generating a Patch
+
 Once your commit message is set, it’s time to generate the patch file. This is what
 you’ll be sending to the mailing list.
 
 ```Shell
-$ git format-patch HEAD~<number of commits>
+git format-patch HEAD~<number of commits>
 ```
+
 If you happen to make a lot of commits along with a lot of patches it's best suggested
 to use a cover letter. You can do this via the following command
 
 ```Shell
-$ git format-patch --base=auto -<number of commits> -o outgoing --cover-letter
+git format-patch --base=auto -<number of commits> -o outgoing --cover-letter
 ```
+
 ## Running checkpatch
+
 There is a **checkpatch.pl** script inside the **scripts/** directory which tries to
 catch style and other issues related to your patch. You can run it via
+
 ```Shell
-$ ./scripts/checkpatch.pl patch-name.patch
+./scripts/checkpatch.pl patch-name.patch
 ```
+
 Warnings can be ignored (to some extent) but errors should be fixed right away.
 If you get any issues related to whitespace you can fix them just by running the
 **cleanpatch** script. If there are some other errors fix them and ammend your changes.
 Repeat this until all the errors are gone.
 
 ## Finding the Maintainers
+
 Now that our patch is ready we need to send it to the maintainers on email.
 There is another script which helps us find the maintainers for our area of change.
+
 ```Shell
 $ ./scripts/get_maintainer.pl patch-name.patch
 Jisheng Zhang <jszhang@kernel.org> (maintainer:RISC-V THEAD SoC SUPPORT)
@@ -125,7 +140,8 @@ devicetree@vger.kernel.org (open list:OPEN FIRMWARE AND FLATTENED DEVICE TREE BI
 linux-kernel@vger.kernel.org (open list)
 ```
 
-# Sending the Patch
+## Sending the Patch
+
 Finally, the moment we have been waiting for is here. Let's send our patch to the
 mailing list.
 
@@ -137,7 +153,8 @@ your-patch.patch
 
 Now just wait for the maintainers to respond and act accordingly.
 
-# Monitoring and Responding
+## Monitoring and Responding
+
 Now that our patch is sent to the mailing list you can view it in the [mailing list](https://lore.kernel.org)
 or [patchwork](https://patchwork.kernel.org). If you don't get any feedback on
 your patch it's best to wait for 14 days before sending again. If you are resending

@@ -13,7 +13,7 @@ rather than some CTF-like scenario or MCQ questions.
 
 ![images](../images/img.png)
 
-# About the Exam
+## About the Exam
 
 As mentioned PNPT is a very realistic exam in the market that assesses one's ability to perform a real-world network
 pentest. In this exam your task is very straightforward, all you have to do is to compromise the domain controller.
@@ -23,7 +23,7 @@ well structured for all.
 The difficulty level is subjective, but I don't think you need to be a hacking guru to be able to clear the
 certification. You just have to know the basics of Linux, Networking, and Ethical Hacking and you will be good to go.
 
-# My Background
+## My Background
 
 I started my PNPT preparation back in the middle of 2024, I went through the Practical Ethical Hacking (or PEH) for
 short course in the PNPT study material. I am originally from Embedded Linux background, I design PCBs and work on the
@@ -37,7 +37,7 @@ research
 internship where I was assigned to develop an Active Directory environment which further enhanced my Active
 Directory skills.
 
-# My Preparation
+## My Preparation
 
 For the preparation side of things, I fully completed the PEH course, External Pentest Playbook, and OSINT course. I
 didn't dig deep into privilege escalation for Windows as well as Linux. I feel that these three courses are enough for
@@ -48,7 +48,7 @@ the [Resources](#resources) section. Secondly, I would recommend you to follow a
 in the PEH course and practice some different scenarios as well. I also recommend solving a few HTB machines just the
 first initial foothold part till you get the shell access.
 
-# Exam Time
+## Exam Time
 
 Enough talking! Let's dive into my experience of actually taking the exam and some useful tips that I can give along
 the way :)
@@ -90,7 +90,7 @@ of your attempt "The Debrief" Here you are given 15 minutes to showcase your fin
 is a short meeting with one of the TCM Security staff. Once the staff approves your report, Congratulations! You finally
 made it to the club :)
 
-# TL;DR
+## TL;DR
 
 Alright for the impatient ones out there! Here's the whole thing summarized:
 
@@ -107,13 +107,13 @@ Alright for the impatient ones out there! Here's the whole thing summarized:
 * Properly draft the pentest report
 * Follow some existing templates for writing the report. TCM Security provides a really good template
 
-# Resources
+## Resources
 
 * [PipMyKali](https://tcm-sec.com/pimpmykali-pmk-v-2-0-release/)
 * [SecLists](https://github.com/danielmiessler/SecLists)
 * [PEH Notes](https://blog.syselement.com/tcm/courses/peh)
 
-# Conclusion
+## Conclusion
 
 I feel that PNPT is absolutely worth it and if you are a beginner PNPT is a great starting point in your cybersecurity
 journey. I learnt a lot about hacking, approaching things with the real world perspective.
